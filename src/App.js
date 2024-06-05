@@ -21,8 +21,9 @@ constructor(){
           <p> Hi {this.state.name.firstName} {this.state.name.lastName}, I work at {this.state.company} </p>
           
          <button onClick={()=>{
-          this.setState({name:{firstName:'Andrei', lastName:'Neagoi'}});
-          console.log(this.state)
+          this.setState((state,props)=>
+          {return {name:{firstName:'Andrei', lastName:'Neagoi'}}},
+          ()=>{ console.log(this.state)});
          }}
          >
          Change Name</button>
