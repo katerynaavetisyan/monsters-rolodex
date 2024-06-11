@@ -22,7 +22,7 @@ class App extends Component {
           id: "16sc61c",
         },
         {
-          name: "Artur",
+          name: "David",
           id: "35d5c11c",
         },
       ],
